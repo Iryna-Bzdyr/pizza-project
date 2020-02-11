@@ -1,0 +1,92 @@
+<div class="wrapper">
+  <div class="first-block">
+    <carousel class="d-flex">
+      <slide>
+       <div class="slide n1 d-flex justify-content-center align-items-center flex-column">              
+          <h1 class="title"><span class="flaticon-pizza-1 mr-1"></span>La Piec<br><small>Доставка піци на дровах</small></h1>
+          <h5 class="details">Приведи друга - отримай</h5>
+          <div class="stiker d-flex justify-content-center align-items-center flex-column">100 гривень</div>
+          <button class="btn btn-warningt">Детaльніше</button>
+        </div>
+      
+      </slide>
+      <slide>
+       <div class="slide n2 d-flex justify-content-center align-items-center flex-column" >
+        <h1 class="title"><span class="flaticon-pizza-1 mr-1"></span>La Piec<br><small>Доставка піци на дровах</small></h1>
+          <h5 class="details">Кожна четверта піцца безкоштовно</h5>
+          <div class="stiker d-flex justify-content-center align-items-center flex-column">3 + 1</div>
+          <button class="btn btn-warningt">Детaльніше</button>
+        </div>
+      </slide>
+      <slide>
+       <div class="slide n3 d-flex justify-content-center align-items-center flex-column">
+        <h1 class="title"><span class="flaticon-pizza-1 mr-1"></span>La Piec<br><small>Доставка піци на дровах</small></h1>
+        <h5 class="details">Самовивіз</h5>
+        <div class="stiker d-flex justify-content-center align-items-center flex-column">-20%</div>
+        <button class="btn btn-warningt">Детaльніше</button>
+        </div>
+      </slide>
+     
+    </carousel>
+    
+  </div>
+  
+  
+  
+  <div class="backgroung">
+  </div>
+  <div class="delivery-section d-flex flex-row">
+     
+    <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/scooter_1.svg" >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 delivery-section-box d-flex justify-content-center align-items-center " >
+          <button class="btn btn-danger">Зони доставки</button>
+        </div>
+        <div class="col-lg-4 delivery-section-box d-flex justify-content-center align-items-center flex-column">
+          <p>00:27:13</p>
+          <p>Середній час доставки в зеленій зоні</p>
+        </div>
+        <div class="col-lg-4 delivery-section-box d-flex justify-content-center align-items-center flex-column">
+          <p>Графік роботи</p>
+          <p>Цілодобово</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   
+      <div class="container for-card" >
+        <div class="row">
+          <div  class="col-lg-3 product-card" *ngFor="let p of products" data-aos="fade-up" data-aos-duration="3000">
+
+            <div class="producr-image" [ngStyle]="{ 'background-image': 'url(' + p.image + ')'}">
+     <span class="discount-stiker" *ngIf="p.discount"><img src="https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F%D1%81%D1%82%D1%96%D0%BA%D0%B5%D1%80.png?alt=media&token=7bd25037-8a60-4117-8d01-0eea8a438b54"> </span>
+            </div>
+           
+            <div class="card-body">
+              <h5 class="text-title">{{p.name | titlecase}}</h5>
+              <div class="d-flex justify-content-center align-items-center flex-row">
+              <p class="product-prise" [ngClass]="{'old-prise': p.discount}">{{p.price}} грн</p>
+              <div *ngIf="p.discount" class="red-line"></div>
+              <p class="product-prise discount" *ngIf="p.discount">{{p.discountPrice}} грн</p>
+              </div>
+              <p class="text-description">{{p.description}}</p>
+               <div class="d-flex justify-content-center align-items-center flex-row">
+              <a  class="btn btn-light" [routerLink]="[ '/menu/'+p.categoryName, p.id ]" data-aos="fade-up"
+              data-aos-duration="2000">Детальніше</a>
+              <button  data-aos="fade-up"
+              data-aos-duration="2000"  class="btn btn-dark" (click)="addProduct(p)">Додати в кошик</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+  
+  

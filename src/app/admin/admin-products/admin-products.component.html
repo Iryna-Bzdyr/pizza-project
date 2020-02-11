@@ -1,0 +1,139 @@
+<div class="container wrapper">
+  <div class="row">
+    <div class="col lg-12">
+      <mat-accordion>
+        <mat-expansion-panel  [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+             Add new product to list
+            </mat-panel-title>
+            <mat-panel-description>
+              Type new product properties
+            </mat-panel-description>
+            <!-- <mat-icon>account_circle</mat-icon> -->
+          </mat-expansion-panel-header>
+          <form [formGroup]=productForm>
+            <mat-form-field>
+              <mat-label>Select category</mat-label>
+              <mat-select [(ngModel)]="selectedCategory" name="category" formControlName=selectedCategory>
+                <mat-option *ngFor="let category of categoriesAdmin" [value]="category.categoryName">
+                  {{category.categoryName}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+              <input type="text" id="productName" [(ngModel)]="productName" name="productName" formControlName=productName
+                matInput placeholder="Product Name">
+            </mat-form-field>
+            <mat-form-field>
+              <textarea matInput placeholder="Product Description" id="productDescription" [(ngModel)]="productDescription"
+                name="productDescription" formControlName=productDescription></textarea>
+            </mat-form-field>
+            <mat-form-field>
+              <input type="text" id="productWeight" [(ngModel)]="productWeight" name="productWeight"
+                formControlName=productWeight matInput placeholder="Product Weight">
+            </mat-form-field>
+            <mat-form-field>
+              <input type="text" id="productSize" [(ngModel)]="productSize" name="productSize"
+               matInput placeholder="Product Size" formControlName=productSize>
+            </mat-form-field>
+            <mat-form-field>
+              <input type="number" id="productPrice" [(ngModel)]="productPrice" name="productPrice"
+                formControlName=productPrice matInput placeholder="Product Price">
+            </mat-form-field>
+      
+      
+            <div class="form-group row">
+              <div class="wrapper imgLouding">
+                <h5 class="card-title">Select a file for upload:</h5>
+                <!-- <input type="file" (change)="upload($event)" accept=".png,.jpg" /> -->
+                <input type="file" (change)="upload($event)"  accept=".png,.jpg" />
+                <br><br>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                    [style.width]="(uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br>
+                <div *ngIf="downloadURL | async; let downloadSrc" class="wrapper" role="alert" id="alert">
+                  <div class="container alert">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        File uploaded: <a [href]="downloadSrc" id="imageHref">{{downloadSrc}}</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <img [src]="downloadSrc" id="image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="btn-group" role="group" *ngIf="uploadState | async; let state">
+                  <button type="button" mat-raised-button color="warn" (click)="deleteEl()" downloadSrc=''>Delete</button>
+                </div>
+              </div>
+            </div> 
+            
+            
+
+
+
+
+
+
+
+
+
+            <button mat-raised-button color="primary" (click)="addProduct()" [disabled]='!productForm.valid'downloadSrc=''>Add
+              product</button>
+      
+          </form>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+      
+      
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+      
+      <table matSort (matSortChange)="sortData($event)" class="table table table-striped table-sm">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th mat-sort-header="categoryName" scope="col">Category</th>
+            <th mat-sort-header="name" scope="col">Name</th>
+            <th mat-sort-header="description" scope="col">Description</th>
+            <th mat-sort-header="weight" scope="col">Weight</th>
+            <th mat-sort-header="size" scope="col">Size</th>
+            <th mat-sort-header="price" scope="col">Price</th>
+            <th mat-sort-header="discount" scope="col">Discount</th>
+            <th mat-sort-header="discountPrice" scope="col">Discount Price</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr *ngFor="let product of sortedData; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.categoryName}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.weight}}</td>
+            <td>{{product.size}}</td>
+            <td>{{product.price}}</td>
+            <td> <mat-checkbox class="example-margin" [(ngModel)]="product.checked" (change)="onChange($event, product.id, product, product)" ></mat-checkbox> </td>
+            <td><input type="number" [disabled]="!product.checked" [(ngModel)]="product.discountPrice" (change)='onChangePrise($event, product.id, product)'>  </td>
+            <td><button (click)="editProduct(product, 0)" mat-raised-button color="accent" [disabled]='editStatus'
+                class="btn">Edit</button> </td>
+            <td><button (click)="deleteProduct(product)" mat-raised-button color="warn" [disabled]='editStatus'
+                class="btn">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

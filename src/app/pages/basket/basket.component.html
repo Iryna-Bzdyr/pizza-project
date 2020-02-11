@@ -1,0 +1,90 @@
+
+<div class="backgroung">
+</div>
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <table  class="table table table-striped table-sm">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Фото</th>
+                    <th scope="col">Назва</th>
+                    <th scope="col">Ціна</th>
+                    <th scope="col">Кількість</th>
+                    <th scope="col">Сума</th>
+                    <th scope="col">Видалити</th>
+                  </tr>
+                </thead>
+              
+                <tbody>
+                  <tr *ngFor="let product of productBasket; let i=index">
+                    <td>{{i+1}}</td>
+                    <td><img [src]="product.orderImage" ></td>
+                    <td>{{product.orderProductsName}}</td>
+                    <td><span *ngIf="product.orderProductsDiscountPrice" class="discount">{{product.orderProductsDiscountPrice}}</span>
+                        <span *ngIf="!product.orderProductsDiscountPrice">{{product.orderProductsPrice}}</span>
+                    </td>
+                    <td><button (click)="delProduct(product)"><i class="fas fa-minus" ></i></button>{{product.orderProductsCount}}
+                      <button (click)="addProduct(product)"><i class="fas fa-plus" ></i></button></td>
+                
+                    <td>{{product.orderProductsSum}}</td>
+                    <td class="del"><button (click)="delAllProduct(product)"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <div class="row order-zone">
+      <div class="col-lg-6 d-flex justify-content-end">
+        <button class="btn btn-danger" (click)="openModal(template)">Оформити замовлення</button>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <p>
+          Сума замовлення:  <span>{{orderSum}} грн.</span>
+        </p>
+      </div>
+    </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Вкажіть реквізити доставки</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]=deliveryForm>
+      <mat-form-field>
+        <input type="text" formControlName=city
+          matInput placeholder="Місто">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" formControlName=street
+          matInput placeholder="Вулиця">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" formControlName=streetNumber
+          matInput placeholder="Номер">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" formControlName=clientName
+          matInput placeholder="Імя">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" formControlName=clientPhone
+          matInput placeholder="Телефон">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" formControlName=deliveryTime
+          matInput placeholder="Час доставки">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea type="text" formControlName=coment
+          matInput placeholder="Коментар"></textarea>
+      </mat-form-field>
+    </form>
+    <button class="btn btn-danger" (click)="addOrders()" [disabled]='!deliveryForm.valid'>Оформити замовлення</button>
+  </div>
+</ng-template>

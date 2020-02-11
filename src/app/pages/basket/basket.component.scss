@@ -1,0 +1,104 @@
+.wrapper{
+    height: 100vh;
+    margin-top: 150px;
+    img{
+        height: 40px;
+        width: 50px;
+    }
+    td,th{
+        text-align: center;
+    }
+    th{
+        background-color:  #fac564;
+        color:rgb(58, 40, 7);
+        padding: 10px;
+    }
+    td{
+        padding: 5px 0px;
+    }
+    }
+
+
+.backgroung{
+    height: 120vh;
+    width: 120vw;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fbg_4.jpg?alt=media&token=8e279e96-5dd2-42c1-974d-79ae0eec1824');
+    background-repeat: no-repeat;
+}
+
+i{
+    margin: 15px;
+    zoom: 80%;
+   
+}
+
+.table{
+width: 80%;
+margin: 0 auto;
+
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+.discount{
+    color: orange;
+}
+
+.del{
+    
+    width: 3%;
+}
+
+.fa-times{
+    color: red;
+}
+
+.btn-danger{
+    font-family: 'Comfortaa', cursive;
+    border-radius: 80px;
+    font-weight: bold;
+    zoom: 130%;
+    color: #fac564;
+    width: 70%; 
+    background-color: rgba(150, 12, 12, 0.973);
+    border: transparent;
+}
+
+.order-zone{
+    padding-top: 2%;
+    font-family: 'Comfortaa', cursive;
+   font-size: 25px;
+   span{
+       color: orange;
+   }
+}
+
+.modal-header,.modal-body{
+    background-color: rgb(43, 42, 42);
+    button{
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+.pull-right:hover{
+color: white;
+}
+mat-form-field{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+

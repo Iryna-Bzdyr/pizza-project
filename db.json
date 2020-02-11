@@ -1,0 +1,297 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Піца La П’єц",
+      "description": "соус томатний, шинка, баварські ковбаски, сир моцарела, ковбаса салямі, прошуто.",
+      "weight": "480",
+      "price": 157,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F29d55a18-a33f-4b36-ab69-626407bf1aec.jpeg?alt=media&token=5eac528f-c128-43e6-8f94-ffa29f62d771",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30"
+    },
+    {
+      "id": 2,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Капрічоза",
+      "description": "соус томатний, сир моцарела, шинка, свіжі гриби.",
+      "weight": "470",
+      "price": 141,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Салямі",
+      "description": "соус томатний, сир моцарела, ковбаса салямі",
+      "weight": "410",
+      "price": 131,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30",
+      "checked": false
+    },
+    {
+      "id": 4,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Маргарита",
+      "description": "соус томатний, сир моцарела, помідори.",
+      "weight": "420",
+      "price": 99,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F5306e72a-48da-4049-b342-a4b61edeeddd.jpeg?alt=media&token=7e3abab8-e349-44e4-b1e2-1582ba9da7cc",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30",
+      "checked": false
+    },
+    {
+      "id": 5,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Карбонара",
+      "description": "соус томатний, шинка, запечене яйце, сир моцарела, баварські ковбаски.",
+      "weight": "480",
+      "price": 142,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F00db13d2-66a2-4743-b77a-a170850c3093.jpeg?alt=media&token=37db6a8f-5fbc-44d1-a27e-fdb9c449f4c9",
+      "discount": true,
+      "discountPrice": 115,
+      "size": "30",
+      "checked": true
+    },
+    {
+      "id": 6,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Прошуто",
+      "description": "соус томатний, сир моцарела, шинка.",
+      "weight": "410",
+      "price": 131,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fb54a7c2e-3e2b-49a9-910b-8ba15dda87d0.jpeg?alt=media&token=e9bea51d-b704-4834-89fa-e7ea0d6d6b6f",
+      "discount": true,
+      "discountPrice": 110,
+      "size": "30",
+      "checked": true
+    },
+    {
+      "id": 7,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Діабола",
+      "description": "соус томатний, сир моцарела, перець чилі, ковбаса пепероні.",
+      "weight": "440",
+      "price": 127,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F129cf9a3-2263-43ce-a291-76ebc906fdbc.jpeg?alt=media&token=d4622c9b-efdd-4d07-a939-c65329343279",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30"
+    },
+    {
+      "id": 8,
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "name": "Парма",
+      "description": "соус вершковий, пармезан, сир моцарела, прошуто, рукола.",
+      "weight": "400",
+      "price": 166,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F81bbf37e-6598-45e6-b203-6c05c8b0c9ac.jpeg?alt=media&token=a14359f1-fdc5-4f01-9951-a7235a2f3854",
+      "discount": false,
+      "discountPrice": null,
+      "size": "30",
+      "checked": false
+    },
+    {
+      "id": 9,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "Салат Цезар ",
+      "description": "Салат айсберг, помідори, куряче м`ясо, сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка. ",
+      "weight": "250",
+      "price": 125,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F73d17105-0294-4406-807f-5bf4ba7559a8.jpeg?alt=media&token=4ae78b58-dc6d-4f3d-bd6e-a0b35324af87",
+      "discount": false,
+      "discountPrice": null
+    },
+    {
+      "id": 10,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "Ді Сальмоне",
+      "description": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+      "weight": "285",
+      "price": 134,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F6ef97715-8272-4885-8a0f-93abaf6c88c0.jpeg?alt=media&token=1539a791-21aa-487f-baf5-24db4579f7e4",
+      "discount": false,
+      "discountPrice": null
+    },
+    {
+      "id": 11,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "Прімавера",
+      "description": "сир моцарела, салат айсберг, помідор чері, огірок, болгарський перець, оливкова олія, фреш лимонний, орегано",
+      "weight": "255",
+      "price": 99,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F01ca98fe-121f-45d7-a76a-255f5b3e5810.jpeg?alt=media&token=ad5cc7d9-9307-4a9f-a787-e4ea885ebd3d",
+      "discount": false,
+      "discountPrice": null
+    },
+    {
+      "id": 12,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "З телятиною",
+      "description": "Салат айсберг, помідори, телятина , сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка",
+      "weight": "250",
+      "price": 163,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F68e400c5-81ab-4195-a977-884408272265.jpeg?alt=media&token=41601b6e-0a62-4422-b37e-f4a12db49511",
+      "discount": false,
+      "discountPrice": null
+    },
+    {
+      "id": 13,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "Ді Фета",
+      "description": "Салат айсберг, свіжі овочі, сир фета, кунжут, оливки, бальзамічна заправка.",
+      "weight": "250",
+      "price": 112,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fcdb005d6-c9fd-4201-a983-195ff5391071.jpeg?alt=media&token=9ff7e8be-a117-457a-9f74-17daed9a089f",
+      "discount": false,
+      "discountPrice": null
+    },
+    {
+      "id": 14,
+      "categoryID": 1,
+      "categoryName": "salad",
+      "name": "Ді Прошуто",
+      "description": "Салат айcберг, прошуто, сир пармезан, помідори, рукола та бальзамічна заправка",
+      "weight": "135",
+      "price": 115,
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fb3b987c1-fb8c-473c-9c1c-5bd95ff4b228.jpeg?alt=media&token=c8879bbe-8340-44de-af3a-001a3945a7ef",
+      "discount": true,
+      "discountPrice": 100,
+      "checked": true
+    }
+  ],
+  "category": [
+    {
+      "categoryID": 1,
+      "categoryName": "pizza",
+      "id": 1
+    },
+    {
+      "categoryID": 2,
+      "categoryName": "salad",
+      "id": 2
+    },
+    {
+      "categoryID": 3,
+      "categoryName": "drinks",
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "orderID": 1,
+      "products": [
+        {
+          "orderProductsName": "Капрічоза",
+          "orderProductsID": 2,
+          "orderProductsPrice": 141,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 141
+        },
+        {
+          "orderProductsName": "Прошуто",
+          "orderProductsID": 6,
+          "orderProductsPrice": 131,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fb54a7c2e-3e2b-49a9-910b-8ba15dda87d0.jpeg?alt=media&token=e9bea51d-b704-4834-89fa-e7ea0d6d6b6f",
+          "orderProductsDiscountPrice": 110,
+          "orderProductsSum": 110
+        },
+        {
+          "orderProductsName": "Ді Сальмоне",
+          "orderProductsID": 10,
+          "orderProductsPrice": 134,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F6ef97715-8272-4885-8a0f-93abaf6c88c0.jpeg?alt=media&token=1539a791-21aa-487f-baf5-24db4579f7e4",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 134
+        }
+      ],
+      "city": "Львів",
+      "street": "Шевченка",
+      "streetNumber": "388",
+      "clientName": "Ірина",
+      "clientPhone": "0631731296",
+      "deliveryTime": "12",
+      "coment": "",
+      "orderSum": 385,
+      "id": 1
+    },
+    {
+      "orderID": 1,
+      "products": [
+        {
+          "orderProductsName": "Салямі",
+          "orderProductsID": 3,
+          "orderProductsPrice": 131,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 131
+        },
+        {
+          "orderProductsName": "Діабола",
+          "orderProductsID": 7,
+          "orderProductsPrice": 127,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F129cf9a3-2263-43ce-a291-76ebc906fdbc.jpeg?alt=media&token=d4622c9b-efdd-4d07-a939-c65329343279",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 127
+        },
+        {
+          "orderProductsName": "Парма",
+          "orderProductsID": 8,
+          "orderProductsPrice": 166,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F81bbf37e-6598-45e6-b203-6c05c8b0c9ac.jpeg?alt=media&token=a14359f1-fdc5-4f01-9951-a7235a2f3854",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 166
+        },
+        {
+          "orderProductsName": "Ді Прошуто",
+          "orderProductsID": 14,
+          "orderProductsPrice": 115,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fb3b987c1-fb8c-473c-9c1c-5bd95ff4b228.jpeg?alt=media&token=c8879bbe-8340-44de-af3a-001a3945a7ef",
+          "orderProductsDiscountPrice": 100,
+          "orderProductsSum": 100
+        }
+      ],
+      "city": "Львів",
+      "street": "Зелена",
+      "streetNumber": "158",
+      "clientName": "Ігор",
+      "clientPhone": "0985241236",
+      "deliveryTime": "13",
+      "coment": "Привіт!",
+      "orderSum": 524,
+      "id": 2
+    }
+  ]
+}

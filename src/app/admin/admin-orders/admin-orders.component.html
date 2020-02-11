@@ -1,0 +1,27 @@
+<div class="col-lg-12 d-flex justify-content-center">
+    <table  class="table table table-striped table-sm">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Клієнт</th>
+            <th scope="col">Номер телефону</th>
+            <th scope="col">Адреса</th>
+            <th scope="col">Сума замовлення</th>
+            <th scope="col">Час доставки</th>
+            <th scope="col">Коментар</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr *ngFor="let order of orderAdmin; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{order.clientName}}</td>
+            <td>{{order.clientPhone}}</td>
+            <td><span>{{order.city}}</span><span>{{order.street}}</span><span>{{order.streetNumber}}</span></td>
+            <td>{{order.orderSum}}</td>       
+            <td>{{order.deliveryTime}}</td>
+            <td>{{order.coment}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

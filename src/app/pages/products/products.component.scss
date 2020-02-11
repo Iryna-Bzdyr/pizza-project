@@ -1,0 +1,291 @@
+.first-block{
+    height: 100vh;
+}
+
+.product-card{
+  max-height: 700px;
+  margin-bottom: 25px;
+  
+ 
+h5{
+    line-height: 1.4;
+    font-weight: 400;
+  
+    } 
+
+    p{
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 300;
+        color: gray;
+      }  
+      .producr-image{
+        width: 100%;
+        height: 220px;
+        background-repeat: no-repeat;
+        background-size: cover
+      }
+ .product-prise{
+    letter-spacing: 12px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    color: white;
+}
+.old-prise{
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.discount{
+    color: orange;
+    letter-spacing: 4px;
+    text-align: right;
+    margin-left: 20px;
+}
+.red-line{
+    height: 2px;
+    width: 65px;
+    background-color: red;
+    transform: rotate(18deg);
+    position: fixed; 
+    left: 17.5%;
+    top: 68%;
+}
+}
+
+.product-card:hover{
+    box-shadow: 5px 5px 60px black;
+    width: 105%;
+}
+
+.text-description{
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    height: 40%;
+}
+
+.text-title{
+    font-weight: bold;
+    color: #fac564;
+    text-align: center;
+}
+
+.btn{
+    background-color:  #fac564;
+    border-radius: 0%;
+    border: 1px solid #fac564;
+    color:rgb(58, 40, 7);
+   margin: 0px 5px;
+}
+.btn-dark{
+    border: 1px solid #a5700c;
+    background-color: transparent;
+    color: #fac564;  
+}
+.btn-dark:hover{
+    background-color:  #fac564;
+    border: 1px solid #fac564;
+    color:rgb(58, 40, 7);
+}
+.btn-light:hover{
+    border: 1px solid #a5700c;
+    background-color: transparent;
+    color: #fac564;
+}
+
+.slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh; 
+    width: 100vw;
+    
+}
+
+carousel{
+    box-shadow: 5px 5px 50px rgb(59, 58, 58);
+    overflow:hidden;
+   margin-top: 6%;
+}
+
+
+
+.n1{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F444634-PEMTQB-849.jpg?alt=media&token=89f0c3f4-5e98-43ba-a4e9-0831cbb6eac1');
+    padding-left: 25%;
+    
+}
+
+.n2{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F%D1%81%D0%BB%D0%B0%D0%B9%D0%B42.jpg?alt=media&token=ade8c81b-6d6a-4b5e-9be4-8e2d435d2149');
+    padding-right: 25%;
+}
+
+
+.n3{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F%D1%81%D0%BB%D0%B0%D0%B9%D0%B43.jpg?alt=media&token=dfc5e967-fd15-4b1c-9195-aa16cd3f15bc');
+    padding-right: 25%;
+}
+
+.n2,.n3{
+    .details{
+        color: rgba(209, 18, 18, 0.973);  
+    }
+.btn-warningt{
+    left: 5%;
+} 
+.mr-1{
+    color: rgba(209, 18, 18, 0.973); 
+}
+.title{
+    color: rgb(46, 45, 45);
+}     
+}
+
+.stiker{
+width: 520px;
+height: 130px;
+position: absolute;
+top: 68%;
+background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fold-photo-texture-png-1%20(1).png?alt=media&token=d1ea66d2-253b-46b7-9e8a-6a459aab5fd3');
+background-repeat: no-repeat;
+background-size: 100% 83%;
+color: #fac564; 
+font-size: 50px;
+font-weight: bold;
+padding-bottom: 40px;
+font-family: 'Comfortaa', cursive;
+animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+h2,h3,h4,h5,h6{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.mr-1{
+    color: #fac564;  
+    font-size: 80px;
+    
+}
+
+.title{
+    position: absolute;
+    top: 2%;
+    letter-spacing: 12px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+}
+
+.btn-warningt{
+    color: rgba(150, 12, 12, 0.973);
+    font-family: 'Comfortaa', cursive;
+    border-radius: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 73%;
+    right: 8%;
+    zoom: 130%;
+    background-color: #fac564;  
+    animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    box-shadow: 5px 5px 60px black;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  .details{
+    font-size: 30px;
+    position: absolute;
+    color: #fac564;  
+    letter-spacing: 2px;
+    font-weight: 900;
+    top: 35%;
+  }
+
+.delivery-section{
+    height: 115px;
+    width: 100%;
+    position: absolute;
+    top: 87%;
+    font-family: "Poppins", Arial, sans-serif;
+    div+div{
+        border-left: 1px solid #fac564;  
+    }
+    p:nth-child(odd){
+        color: #fac564; 
+    }
+    p{
+        margin: 2px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+        
+    }
+}
+
+.btn-danger{
+    font-family: 'Comfortaa', cursive;
+    border-radius: 80px;
+    font-weight: bold;
+    zoom: 130%;
+    color: #fac564;
+    width: 101%; 
+    background-color: rgba(150, 12, 12, 0.973);
+    border: transparent;
+}
+
+.discount-stiker{
+    zoom:80%
+}
+
+.backgroung{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fbg_4.jpg?alt=media&token=8e279e96-5dd2-42c1-974d-79ae0eec1824');
+    background-repeat: no-repeat;
+}
+
+.for-card{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  
+    
+}
