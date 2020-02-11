@@ -83,6 +83,8 @@ import { NgxUiLoaderModule,
 import {  ngxUiLoaderConfig } from './preloading-config';
 import { ZoomDirective } from './shared/directives/zoom.directive';
 import { CarouselConfig, CarouselModule } from 'ngx-bootstrap/carousel';
+import {IMaskModule} from 'angular-imask';
+
 
 @NgModule({
   declarations: [
@@ -157,7 +159,7 @@ import { CarouselConfig, CarouselModule } from 'ngx-bootstrap/carousel';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-  
+    IMaskModule,
 /*--------------------------*/
 
 

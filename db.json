@@ -22,10 +22,10 @@
       "weight": "470",
       "price": 141,
       "image": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
-      "discount": false,
-      "discountPrice": null,
+      "discount": true,
+      "discountPrice": 120,
       "size": "30",
-      "checked": false
+      "checked": true
     },
     {
       "id": 3,
@@ -292,6 +292,56 @@
       "coment": "Привіт!",
       "orderSum": 524,
       "id": 2
+    },
+    {
+      "orderID": 1,
+      "products": [
+        {
+          "orderProductsName": "Капрічоза",
+          "orderProductsID": 2,
+          "orderProductsPrice": 141,
+          "orderProductsCount": 2,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 282
+        },
+        {
+          "orderProductsName": "Салямі",
+          "orderProductsID": 3,
+          "orderProductsPrice": 131,
+          "orderProductsCount": 2,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F9da60be5-dd78-4e0c-8ea7-b55942bbe81d.jpeg?alt=media&token=f265eb55-5d1b-4935-80c3-39bcd90c7cf4",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 262
+        },
+        {
+          "orderProductsName": "Маргарита",
+          "orderProductsID": 4,
+          "orderProductsPrice": 99,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2F5306e72a-48da-4049-b342-a4b61edeeddd.jpeg?alt=media&token=7e3abab8-e349-44e4-b1e2-1582ba9da7cc",
+          "orderProductsDiscountPrice": null,
+          "orderProductsSum": 99
+        },
+        {
+          "orderProductsName": "Прошуто",
+          "orderProductsID": 6,
+          "orderProductsPrice": 131,
+          "orderProductsCount": 1,
+          "orderImage": "https://firebasestorage.googleapis.com/v0/b/project-98593.appspot.com/o/images%2Fb54a7c2e-3e2b-49a9-910b-8ba15dda87d0.jpeg?alt=media&token=e9bea51d-b704-4834-89fa-e7ea0d6d6b6f",
+          "orderProductsDiscountPrice": 110,
+          "orderProductsSum": 110
+        }
+      ],
+      "city": "Львів",
+      "street": "Зелена",
+      "streetNumber": "12",
+      "clientName": "Іра",
+      "clientPhone": "0631731296",
+      "deliveryTime": "13",
+      "coment": "",
+      "orderSum": 753,
+      "id": 3
     }
   ]
 }
